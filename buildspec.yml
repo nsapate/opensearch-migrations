@@ -8,7 +8,8 @@ phases:
       - yum update -y
       - yum install -y git java-11-amazon-corretto-devel docker https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm
       - which docker || (echo "Docker is not installed" && exit 1)
-      - service docker start
+      - systemctl enable docker
+      - systemctl start docker
       - git init
       - release_tag=$(curl -s https://api.github.com/repos/opensearch-project/opensearch-migrations/releases/latest | jq -r ".tag_name")
       - git remote add -f origin https://github.com/opensearch-project/opensearch-migrations.git
