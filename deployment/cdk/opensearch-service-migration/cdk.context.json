@@ -1,6 +1,6 @@
 {
-  "demo-deploy": {
-    "stage": "dev",
+  "demo-deploy-325": {
+    "stage": "dev-325",
     "engineVersion": "OS_2.9",
     "domainName": "demo-opensearch-cluster",
     "dataNodeCount": 2,
