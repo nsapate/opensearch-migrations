@@ -20,5 +20,5 @@ phases:
   build:
     commands:
       - export AWS_DEFAULT_REGION=us-east-1
-      - cdk bootstrap --c contextId=demo-deploy
-      - cdk deploy "*" --c contextId=demo-deploy --require-approval never --concurrency 3
+      - cdk bootstrap --c contextId=demo-deploy-325
+      - cdk deploy "*" --c contextId=demo-deploy-325 --require-approval never --concurrency 3
